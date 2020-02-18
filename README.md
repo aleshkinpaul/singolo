@@ -1,2 +1,2 @@
 # singolo
-singolo
+aleshkinpaul.github.io/singolo/

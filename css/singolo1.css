@@ -1,0 +1,284 @@
+@font-face {
+	font-family: "Lato";
+	src: url("../assets/fonts/Lato-Regular.ttf");
+}
+html {
+	box-sizing: border-box;
+	background-color: #F5F5F5;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	width: 1020px;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	font-family: "Lato";
+	font-size: 14px;
+	color: #000000;
+}
+
+body.modal-active {
+	overflow: hidden;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px 1px 1px 1px);
+	padding: 0 !important;
+	border: 0 !important;
+	width: 1px !important;
+	height: 1px !important;
+	overflow: hidden;
+}
+
+.cleargix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.fixed-container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.header-info {
+	margin: 0;
+	padding: 35px 40px;
+	height: 95px;
+
+	background-color: #2D303A;
+	border-bottom: 6px solid #323746;
+}
+
+	.logo-title {
+		float: left;
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+
+		letter-spacing: -0.4px;
+		line-height: 19px;
+
+		font-size: 25px;
+		font-weight: bold;
+	}
+
+		.logo-title-white {
+			color: #FFFFFF;
+		}
+
+		.logo-title-red {
+			color: #F06C64;
+		}
+
+	.nav-container {
+		float: right;
+	}
+
+	.nav-menu {
+		margin: 0;
+		padding: 10px 0 0;
+
+		line-height: 9px;
+		list-style-type: none;
+
+		font-size: 12px;
+		color: #FFFFFF;
+	}
+
+		.nav-menu-item {
+			display: inline-block;
+			letter-spacing: -0.33px;
+
+			font-weight: 600;
+		}
+
+			.nav-menu-item:not(:last-child) {
+				margin-right: 12px;
+			}
+
+			.nav-menu-item:not(:last-child)::after {
+				margin-left: 14px;
+
+				content: "·";
+				color: #494E62;
+			}
+
+		.nav-menu-item-link:hover {
+			color: #F06C64;
+		}
+
+.slider-container {
+	position: relative;
+	height: 600px;
+
+	background-color: #F06C64;
+	border-bottom: 6px solid #EA676B;
+}
+
+	.phone-img {
+		position: absolute;
+		z-index: 1;
+	}
+
+		.phone-img-vertical {
+			top: 53px;
+			left: 112px;
+		}
+
+		.phone-img-horizontal {
+			top: 52px;
+			left: 546px;
+
+			transform: scaleY(-1) rotate(90deg);
+		}
+
+		.phone-img-vertical-shadow,
+		.phone-img-horizontal-shadow {
+			z-index: 0;
+		}
+
+		.phone-img-bg {
+			background-repeat: no-repeat;
+			background-position-x: 11px;
+			background-position-y: 62px;
+		}
+
+		.phone-img-vertical-bg {
+			background-image: url("../assets/images/wp1.png");
+		}
+
+		.phone-img-horizontal-bg {
+			background-image: url("../assets/images/wp2.png");
+		}
+
+	.slider-button {
+		margin: 281px 0;
+		padding: 16px 8px;
+
+		background-repeat: no-repeat;
+	}
+
+		.slider-button-back {
+			float: left;
+
+			background-image: url("../assets/images/back-button.png");
+		}
+
+		.slider-button-forward {
+			float: right;
+			background-image: url("../assets/images/forward-button.png");
+		}
+
+.footer-container {
+	padding: 66px 0 0 0;
+	height: 500px;
+	letter-spacing: -0.075px;
+
+	background-color: #F2F2F2;
+	border-bottom: 6px solid #FFFFFF;
+}
+
+	.footer-title {
+		margin: 0 0 24px;
+
+		color: #666D89;
+		font-size: 30px;
+		font-weight: 900;
+
+		line-height: 23px;
+		letter-spacing: 0.2px;
+	}
+
+	.footer-paragraph {
+		margin: 0 0 47px;
+
+		font-size: 18px;
+		color: #767E9E;
+		font-weight: lighter;
+
+		line-height: 1.7;
+	}
+
+	.services-list {
+		margin: 0;
+		padding: 0;
+
+		font-size: 0px;
+
+		list-style-type: none;
+
+		column-gap: 20px;
+		columns: 3;
+	}
+
+		.services-list-item {
+			margin: 0 20px 38px 0;
+			padding: 0;
+
+			font-size: 12px;
+			color: #767E9E;
+		}
+
+		.services-list-item-article {
+			width: 300px;
+			height: 85px;
+
+			overflow: hidden;
+		}
+
+			.service-cover {
+				float: left;
+				position: relative;
+
+				width: 59px;
+				height: 59px;
+
+				border-radius: 30px;
+				border: 2px solid #666D89;
+			}
+
+				.service-icon {
+					position: absolute;
+					margin: auto;
+					display: block;
+					top: 50%;
+					left: 50%;
+   				transform: translate(-50%, -50%);
+				}
+
+			.service-section {
+				float: right;
+
+				width: 220px;
+			}
+
+				.service-section-title {
+					margin: 0;
+
+					font-size: 18px;
+					color: #666D89;
+
+					line-height: 14px;
+					letter-spacing: 0.2px;
+				}
+
+				.service-section-text {
+					line-height: 1.8;
+				}

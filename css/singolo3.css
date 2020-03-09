@@ -1,0 +1,272 @@
+@font-face {
+	font-family: "Lato";
+	src: url("../assets/fonts/Lato-Regular.ttf");
+}
+html {
+	box-sizing: border-box;
+	background-color: #F5F5F5;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	width: 1020px;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	font-family: "Lato";
+	font-size: 14px;
+	color: #000000;
+}
+
+body.modal-active {
+	overflow: hidden;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+textarea {
+   font-family: inherit;
+	 resize: none;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px 1px 1px 1px);
+	padding: 0 !important;
+	border: 0 !important;
+	width: 1px !important;
+	height: 1px !important;
+	overflow: hidden;
+}
+
+.cleargix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.fixed-container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+
+
+.quote-container {
+	padding: 65px 0 15px;
+	color: #F0D8D9;
+
+	background-color: #F06C64;
+	border-bottom: 6px solid #EA676B;
+}
+
+	.quote-title {
+		margin: 0 0 22px;
+
+		font-size: 30px;
+		font-weight: bold;
+
+			line-height: 25px;
+			letter-spacing: 0.25px;
+	}
+
+	.quote-paragraph {
+		margin: 0 0 45px;
+
+		font-size: 18px;
+
+		line-height: 30px;
+		letter-spacing: -0.5px;
+	}
+
+	.quote-form {
+		float: left;
+	}
+
+		.quote-form-item {
+			margin-bottom: 16px;
+			padding: 13px 15px 13px;
+
+			width: 619px;
+
+			font-size: 11px;
+			letter-spacing: 0.5px;
+
+			display: block;
+
+			color: #F48C8F;
+			background-color: #D6564F;
+			border: none;
+			border-radius: 5px;
+		}
+
+			.quote-form-item::placeholder {
+				font-size: 11px;
+
+				color: #F48C8F;
+
+				letter-spacing: 0.5px;
+			}
+
+			.quote-form-item:last-child {
+				margin-bottom: 0;
+			}
+
+			.quote-form-item-project-description {
+				height: 202px;
+			}
+
+			.quote-form-button {
+				float: right;
+
+				width: 150px;
+				height: 35px;
+
+				color: #D6564F;
+				font-weight: bold;
+
+				background-color: #F0D8D9;
+				border: none;
+				border-radius: 5px;
+			}
+
+		.quote-article {
+			float: right;
+			width: 300px;
+		}
+
+			.quote-article-title {
+				margin: 0 0 12px;
+
+				font-size: 18px;
+				font-weight: bold;
+
+				line-height: 16px;
+				letter-spacing: 0.1px;
+			}
+
+			.quote-article-paragraph {
+				margin: 0 0 24px;
+
+				font-size: 12px;
+
+				line-height: 22px;
+				letter-spacing: 0.02px;
+				word-break: break-all;
+			}
+
+		.quote-article-contact-list {
+			margin: 0;
+			padding: 0;
+
+			font-size: 12px;
+			list-style-type: none;
+		}
+
+			.quote-article-contact-list-item {
+				margin-bottom: 6px;
+			}
+
+			.quote-article-contact-list-item-link {
+				padding-left: 24px;
+
+				display: block;
+
+				background-repeat: no-repeat;
+				background-position: left;
+			}
+
+				.quote-article-contact-list-item:last-child {
+					margin-bottom: 0;
+				}
+
+				.image-location-icon {
+					background-image: url("../assets/images/location-icon.png");
+					background-position-x: 3px;
+				}
+
+				.image-tel-icon {
+					background-image: url("../assets/images/phone-mini-icon.png");
+				}
+
+				.image-mail-icon {
+					background-image: url("../assets/images/mail-icon.png");
+				}
+
+.footer-container {
+height: 76px;
+
+	font-size: 12px;
+
+	color: #666D89;
+	background-color: #2D303A;
+}
+
+.footer-paragraph {
+	float: left;
+	margin: 30px 0 0;
+
+	font-size: 12px;
+}
+
+.footer-contact-list {
+	float: right;
+
+	margin: 22px 0 19px;
+	padding: 0 0 0 1px;
+
+	font-size: 0px;
+	line-height: 10px;
+
+	list-style-type: none;
+}
+
+	.footer-contact-list-item {
+		padding-right: 8px;
+
+		display: inline-block;
+	}
+
+		.footer-contact-list-item:last-child {
+			padding-right: 0;
+		}
+
+	.footer-contact-list-item-link {
+		padding: 15px;
+
+		display: block;
+
+		border: 1px solid #666D89;
+		border-radius: 16px;
+
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.facebook-logo {
+		background-image: url("../assets/images/facebook-logo.png");
+	}
+
+	.google-logo {
+		background-image: url("../assets/images/google-logo.png");
+	}
+
+	.twitter-logo {
+		background-image: url("../assets/images/twitter-logo.png");
+	}
+
+	.linkedin-logo {
+		background-image: url("../assets/images/linkedin-logo.png");
+	}
